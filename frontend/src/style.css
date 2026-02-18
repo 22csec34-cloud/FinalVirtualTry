@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #1b1b3a, #05050f);
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* FLUID BACKGROUND */
+.fluid-bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, #9b5cff44, transparent 40%),
+    radial-gradient(circle at 80% 70%, #00f2fe33, transparent 40%);
+  filter: blur(120px);
+  z-index: -1;
+  animation: float 10s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(-40px); }
+  to { transform: translateY(40px); }
+}
+
+/* DASHBOARD */
+.dashboard {
+  padding: 50px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero span {
+  background: linear-gradient(90deg, #9b5cff, #00f2fe);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 40px rgba(155, 92, 255, 0.15);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 70px rgba(155, 92, 255, 0.35);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+/* USER IMAGE */
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  border: 2px dashed rgba(255,255,255,0.25);
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.preview-img {
+  max-height: 100%;
+  border-radius: 14px;
+}
+
+/* DROPZONE */
+.dropzone {
+  border: 2px dashed rgba(255,255,255,0.25);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropzone:hover {
+  border-color: #9b5cff;
+  background: rgba(155, 92, 255, 0.1);
+}
+
+/* CLOTH GRID */
+.clothes-grid {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 15px;
+}
+
+.cloth-wrapper {
+  position: relative;
+}
+
+.cloth-img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* PROMPT */
+.prompt-box {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  color: white;
+  resize: none;
+}
+
+/* BUTTON */
+.generate-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #9b5cff, #00f2fe);
+  transition: transform 0.3s ease;
+}
+
+.generate-btn:hover {
+  transform: scale(1.05);
+}
+
+/* TRY ON INPUT */
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tryon-card {
+  width: 100%;
+  max-width: 480px;
+}
+
+.user-badge {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background: linear-gradient(90deg, #9b5cff, #00f2fe);
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: rgba(255, 60, 60, 0.9);
+}

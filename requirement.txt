@@ -1,0 +1,3 @@
+# Virtual Try-On
+# To run: python main.py --image path/to/outfit/image.png
+# Or call from backend API via /api/try-on endpoint
