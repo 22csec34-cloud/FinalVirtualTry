@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-# Virtual environment
-venv/
-env/
-ENV/
-
-# Python cache
-__pycache__/
-*.pyc
-
-# Environment variables
-.env
 
 # OS files
 .DS_Store
 Thumbs.db
 =======
+=======
+>>>>>>> e66beb8f38c95bc38b8869d18dbc70400634c503
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -222,4 +212,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+<<<<<<< HEAD
+>>>>>>> e66beb8f38c95bc38b8869d18dbc70400634c503
+=======
 >>>>>>> e66beb8f38c95bc38b8869d18dbc70400634c503
