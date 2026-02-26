@@ -1,0 +1,19 @@
+# ===================================
+# Virtual Try-On Fashion - Python Dependencies
+# Virtual Try-On
+# To run: python main.py --image path/to/outfit/image.png
+# Or call from backend API via /api/try-on endpoint
+# ===================================
+# Install with: pip install -r requirements.txt
+
+# Background Removal
+rembg
+onnxruntime
+
+# Image Processing
+Pillow
+numpy
+
+# Computer Vision & AR
+opencv-python
+mediapipe
